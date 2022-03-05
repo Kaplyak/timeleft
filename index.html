@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="loadOptions()">
+        <div class="container">
+            <h1>timeleft</h1>
+            <div id="top" class="unshow">
+
+            </div>
+            <div id="form">
+                <p>Introduce your date of birth and your country, and <span>timeleft</span> will do some magic.</p>
+                <form class="disappear" onsubmit="timeleft(event)">
+                    <input id="dob" type="date" required />
+                    <select id="country" required>
+    
+                    </select>
+                    <input type="submit" value="Do magic"/>
+                </form>
+            </div>
+            
+            <hr class="disappear" />
+            <div id="boxes">
+                <!-- JS fills this. -->
+            </div>
+            <div id="bottom" class="unshow">
+                <!-- JS fills this. -->
+                <p>Live the rest of your life to the fullest, filling those gray boxes with color, doing what makes you happy.</p>
+            </div>
+            <footer>
+                <small>Made by <a href="https://github.com/Kaplyak" >Kevin Pernía</a></small>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
